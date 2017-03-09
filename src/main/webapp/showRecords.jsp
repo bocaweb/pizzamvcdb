@@ -25,9 +25,11 @@
                 for (PizzaOrder order : orderList) {
             %>
             <tr>
+                <td><%=order.getId()%></td>
                 <td><%=order.getEmail()%></td>
                 <td><%=order.getSize()%></td>
                 <td><%=order.getToppings()%></td>
+                <td><%=order.getOrderTime()%></td>
             </tr>
             <%
                 }

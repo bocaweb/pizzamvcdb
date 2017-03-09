@@ -20,8 +20,8 @@ public class DBConnection {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            //con = DriverManager.getConnection("jdbc:mysql://52.4.58.57:3306/jdoe?useSSL=false", "jdoe", "mucis");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdoe?useSSL=false", "jdoe", "mucis"); 
+            con = DriverManager.getConnection("jdbc:mysql://52.4.58.57:3306/jdoe?useSSL=false", "jdoe", "mucis");
+            //con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdoe?useSSL=false", "jdoe", "mucis"); 
             System.out.println("Connected to DB at " + LocalDateTime.now());
         } catch (SQLException e) {
             e.printStackTrace();
